@@ -21,9 +21,23 @@ Description: A general framework for finite mixtures of regression
 Depends: R (>= 2.15.0), lattice
 Imports: graphics, grid, grDevices, methods, modeltools (>= 0.2-16),
         nnet, stats, stats4, utils
-Suggests: actuar, codetools, diptest, Ecdat, ellipse, gclus, glmnet,
-        lme4 (>= 1.1), MASS, mgcv (>= 1.8-0), mlbench, multcomp,
-        mvtnorm, SuppDists, survival
+Suggests: 
+    actuar,
+    codetools,
+    diptest,
+    Ecdat,
+    ellipse,
+    gclus,
+    glmnet,
+    lme4 (>= 1.1),
+    MASS,
+    mgcv (>= 1.8-0),
+    mlbench,
+    multcomp,
+    mvtnorm,
+    SuppDists,
+    survival,
+    testthat (>= 3.0.0)
 License: GPL (>= 2)
 LazyLoad: yes
 NeedsCompilation: no
@@ -36,3 +50,4 @@ Author: Bettina Gruen [aut, cre] (<https://orcid.org/0000-0001-7265-4773>),
 Maintainer: Bettina Gruen <Bettina.Gruen@R-project.org>
 Repository: CRAN
 Date/Publication: 2025-02-28 06:20:02 UTC
+Config/testthat/edition: 3
