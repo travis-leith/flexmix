@@ -19,8 +19,21 @@ Description: A general framework for finite mixtures of regression
   mixtures of standard linear models, generalized linear models and
   model-based clustering.
 Depends: R (>= 2.15.0), lattice
-Imports: graphics, grid, grDevices, methods, modeltools (>= 0.2-16),
-        nnet, stats, stats4, utils
+Imports: 
+    graphics,
+    grid,
+    grDevices,
+    methods,
+    modeltools (>= 0.2-16),
+    nnet,
+    stats,
+    stats4,
+    utils,
+    Rcpp,
+    RcppParallel
+LinkingTo:
+    Rcpp,
+    RcppParallel
 Suggests: 
     actuar,
     codetools,
@@ -40,7 +53,7 @@ Suggests:
     testthat (>= 3.0.0)
 License: GPL (>= 2)
 LazyLoad: yes
-NeedsCompilation: no
+NeedsCompilation: yes
 Packaged: 2025-02-26 14:53:48 UTC; gruen
 Author: Bettina Gruen [aut, cre] (<https://orcid.org/0000-0001-7265-4773>),
   Friedrich Leisch [aut] (<https://orcid.org/0000-0001-7278-1983>),
@@ -51,3 +64,4 @@ Maintainer: Bettina Gruen <Bettina.Gruen@R-project.org>
 Repository: CRAN
 Date/Publication: 2025-02-28 06:20:02 UTC
 Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0

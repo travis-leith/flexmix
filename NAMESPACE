@@ -1,3 +1,6 @@
+useDynLib(flexmix, .registration = TRUE)
+importFrom(Rcpp, sourceCpp)
+importFrom(RcppParallel, RcppParallelLibs)
 importFrom("graphics", "hist", "lines", "matplot", "plot", "points", "text")
 importFrom("grid", "gpar", "grid.lines", "grid.polygon", "unit")
 importFrom("grDevices", "axisTicks", "hcl", "rgb")
@@ -66,7 +69,13 @@ export(
        "plotEll",
        "refit_optim",
        "relabel",
-       "stepFlexmix"
+       "stepFlexmix",
+       "ExLinear",
+       "ExNPreg",
+       "ExNclus",
+       "flexmix_fast",
+       "stepFlexmix_fast",
+       "FLXfit_fast"
        )
 
 
